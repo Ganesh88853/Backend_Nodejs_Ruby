@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 app.use('/vendor', vendorRoutes);
 app.use('/firm', firmRoutes);
 app.use('/product', productRoutes);
-app.use('/uploada', express.static('uploads'));
+app.use('/uploads', express.static('uploads'));
 
 app.listen(PORT, () => {
     console.log(`server started and running at ${PORT}`);
